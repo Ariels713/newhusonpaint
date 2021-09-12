@@ -1,10 +1,14 @@
+import Footer from "../../components/Footer";
+import Navigation from "../../components/Navigation";
+
 export default function Layout({ children }) {
   return (
     <>
-      {/* <Navbar />
-      <main>{children}</main>
-      <Footer /> */}
-      <nav>I'm the nav</nav>
+      <div>
+        <Navigation />
+        {children}
+        <Footer />
+      </div>
     </>
   );
 }
